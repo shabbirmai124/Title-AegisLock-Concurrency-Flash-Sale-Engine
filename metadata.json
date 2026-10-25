@@ -1,0 +1,6 @@
+{
+  "name": "AegisLock Concurrency & Flash-Sale Engine",
+  "description": "High-concurrency flash-sale and live event ticketing engine demonstrating OS semaphores, Redis distributed mutex locks, SQL ACID transactions, and a 5,000-buyer real-time WebSocket stress-test visualizer.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
