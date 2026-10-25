@@ -1,0 +1,55 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-mono: 'JetBrains Mono', monospace;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-color: #FFFFFF;
+    color: #000000;
+    letter-spacing: -0.01em;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  code, pre, .font-mono {
+    font-family: var(--font-mono);
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Monochrome diagonal stripe pattern for Redis Locked / Race Collision states */
+.pattern-diagonal-lines {
+  background-image: repeating-linear-gradient(
+    -45deg,
+    #000000,
+    #000000 1px,
+    #ffffff 1px,
+    #ffffff 6px
+  );
+}
+
+.pattern-dots {
+  background-image: radial-gradient(#000000 1px, transparent 1px);
+  background-size: 8px 8px;
+}
+
+/* Clean monochrome scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #F5F5F5;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #000000;
+}
